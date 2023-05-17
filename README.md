@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<img src="assets/img/icons/brand-icon-rose.svg" width="60px"><br>Portfólio - Larissa Santos
+<img src="assets/img/icons/brand-icon-rose.svg" width="50px"><br>Portfólio - Larissa Santos
 </h1>
 <br>
 
