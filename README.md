@@ -18,8 +18,8 @@ O site é possui por cinco partes:
 - **Home:** Nessa parte é uma breve apresentação do site.
 - **Quem sou eu:** Essa seção fala um pouco sobre mim.
 - **Meus Projetos:** Apresento meus principais projetos com link direto para eles.
-- **Conhecimentos:** Apresenta as tecnologias que tenho conhecimento.
-- **Contato:** Apresenta um formulário de contato.
+- **Conhecimentos:** Apresenta as tecnologias que tenho algum conhecimento.
+- **Contato:** Possui um formulário de contato para o usuário preencher.
 <br>
 
 ---
