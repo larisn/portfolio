@@ -1,0 +1,156 @@
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+#s-contact {
+  background-color: $white4;
+  padding-top: 14rem;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @include responsive-tablet {
+    padding-top: 20rem;
+    height: 100vh;
+  }
+  @include responsive-desktop {
+    padding-top: 6rem;
+  }
+  @include responsive-desktop-hd {
+    padding-top: 10rem;
+  }
+  .container {
+    @include container;
+    z-index: 1;
+    div:nth-child(1) {
+      margin: 0 auto;
+      padding: 5rem;
+      background-color: $blue-card-message;
+      height: 880px;
+      h1 {
+        color: $rose-title;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        @include responsive-small-mobile {
+          font-size: 2.8rem;
+        }
+      }
+      p {
+        color: $white2;
+        font-size: 1.8rem;
+        max-width: 680px;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        @include responsive-small-mobile {
+          font-size: 1.5rem;
+        }
+      }
+      @include responsive-small-mobile {
+        height: 830px;
+        width: 300px;
+      }
+      @include responsive-tablet {
+        width: 650px;
+        height: 700px;
+      }
+      @include responsive-desktop {
+        width: 1000px;
+        height: 650px;
+      }
+    }
+  }
+}
+
+.contact-form {
+  max-width: 640px;
+  margin: 0 auto;
+  input:not(.button-submit) {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: .1rem;
+    border-bottom: 1px solid $rose-bg;
+    background-color: transparent;
+    caret-color: $rose-bg;
+    color: $white1;
+    &::placeholder {
+      color: $white3;
+      font-weight: 500;
+      padding: 5px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    color: $white2;
+    font-size: 1.6rem;
+  }
+}
+
+.input-name, .input-email {
+  width: 46%;
+  float: left;
+  clear: none;
+  margin-left: 0;
+}
+
+.input-email {
+  margin-left: 4%;
+}
+
+.input-subject {
+  width: 96%;
+  margin-bottom: 1.5rem;
+}
+
+.input-message {
+  color: #8d8d8d;
+  width: 96%;
+  margin-top: 2rem;
+  &::placeholder {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.button-submit {
+  text-align: center;
+  cursor: pointer;
+  transition: ease-out 0.7s;
+  border: 1px solid $rose-bg;
+  padding: 1.2rem;
+  color: $white1;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 2rem 0 3rem 18rem;
+  width: 100px;
+  &:hover {
+    color: $blue-bg-sec3;
+    box-shadow: inset 0 -100px 0 0 $rose-bg;
+  }
+  @include responsive-small-mobile {
+    margin-left: 9rem;
+    font-size: 1.4rem;
+  }
+  @include responsive-tablet {
+    margin-left: 42.5rem;
+  }
+  @include responsive-desktop {
+    margin-left: 51.5rem;
+  }
+}
+
+.email-option {
+  margin: 0 auto;
+  max-width: 680px;
+  font-weight: 500;
+  color: #9FA0B6;
+  font-size: 1.4rem;
+}

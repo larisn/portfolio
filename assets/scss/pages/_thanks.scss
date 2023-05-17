@@ -1,0 +1,74 @@
+
+html {
+  background-color: $rose-bg;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-thanks {
+  background-color: $blue-bg-sec4;
+  width: 350px;
+  height: 300px;
+  margin: 10rem auto;
+  padding: 3rem;
+  @include responsive-small-mobile {
+    width: 290px;
+    height: 320px;
+  }
+  @include responsive-tablet {
+    width: 600px;
+    height: 300px;
+  }
+  h1 {
+    color: $rose-title;
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    color: $white2;
+    font-weight: 500;
+    font-size: 1.8rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+  button {
+    text-align: center;
+    cursor: pointer;
+    transition: ease-out 0.7s;
+    border: 1px solid $rose-bg;
+    padding: 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin: 3rem 0 6rem 0rem;
+    width: 100px;
+    box-shadow: inset 0 0 0 0 $rose-bg;
+    a {
+      color: $white1;
+    }
+    &:hover {
+      color: $blue-bg-sec3;
+      box-shadow: inset 0 -100px 0 0 $rose-bg;
+    }
+    @include responsive-small-mobile {
+      font-size: 1.4rem;
+    }
+    @include responsive-tablet {
+      margin: 2rem 0 6rem 2rem;
+    }
+  }
+}
+
+.container2-footer {
+  justify-content: center;
+}
