@@ -23,7 +23,7 @@ O site é possui por cinco partes:
 <br>
 
 ---
-🍥
+
 ## 🍥 Tecnologias utilizadas:
 
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
