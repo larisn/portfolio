@@ -10,8 +10,8 @@
   right: 0;
   background-color: $rose-bg;
   svg {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   div:nth-child(1) {
     @include flexbox-between;
@@ -22,7 +22,7 @@
 }
 
 .content-mobile-navbar {
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 1.6rem 3rem;
   @include responsive-tablet {
     padding: 3rem 5rem 4.5rem 5rem;
   }

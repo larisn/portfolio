@@ -21,10 +21,9 @@ footer {
       margin-bottom: 2rem;
     }
     span {
-      color: $white3;
+      color: $rose-bg;
       font-weight: 600;
     }
-
     @include responsive-tablet {
       @include flexbox-between;
       padding: 22px 50px 0 50px;
@@ -41,14 +40,14 @@ footer {
       @include flexbox-between;
       padding: 2rem;
       padding-bottom: 0;
-    }
-    h2 {
-      font: 400 1.5rem 'Raleway';
-      color: $white1;
-    }
-    span {
-      color: $rose-bg;
-      font-weight: 600;
+      h2 {
+        font: 400 1.5rem 'Raleway';
+        color: $white1;
+      }
+      span {
+        color: $rose-bg;
+        font-weight: 600;
+      }
     }
   }
 }
