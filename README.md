@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<img src="assets/img/icons/brand-icon-rose.svg" width="60px"><br>Portfólio - Larissa Santos
+<img src="assets/img/icons/brand-icon-rose.svg" width="50px"><br>Portfólio - Larissa Santos
 </h1>
 <br>
 
@@ -18,12 +18,12 @@ O site é possui por cinco partes:
 - **Home:** Nessa parte é uma breve apresentação do site.
 - **Quem sou eu:** Essa seção fala um pouco sobre mim.
 - **Meus Projetos:** Apresento meus principais projetos com link direto para eles.
-- **Conhecimentos:** Apresenta as tecnologias que tenho conhecimento.
-- **Contato:** Apresenta um formulário de contato.
+- **Conhecimentos:** Apresenta as tecnologias que tenho algum conhecimento.
+- **Contato:** Possui um formulário de contato para o usuário preencher.
 <br>
 
 ---
-🍥
+
 ## 🍥 Tecnologias utilizadas:
 
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
