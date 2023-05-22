@@ -6,7 +6,6 @@
 
 ![](https://github.com/larisn/portfolio/blob/main/assets/img/Preview.png)
 <br>
-<br>
 
 <div align="center">
   <p><a href="https://larisn.com/">Clique para ir para o portfólio</a></p>
