@@ -12,7 +12,7 @@
 </div>
 
 ## ✨ Seções
-O site é possui por cinco partes:
+O site é possui cinco partes:
 
 - **Home:** Nessa parte é uma breve apresentação do site.
 - **Quem sou eu:** Essa seção fala um pouco sobre mim.
