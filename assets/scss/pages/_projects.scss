@@ -120,7 +120,7 @@
     border: 2px solid $dark-stroke;
   }
   &:nth-child(3) {
-    border: 2px solid $green-stroke;
+    border: 2px solid $red-stroke;
   }
   div {
     h2 {
@@ -214,7 +214,7 @@
 .button-myfins {
   margin-bottom: 2.8rem;
   a {
-    color: $green-stroke;
+    color: $red-stroke;
   }
   @include responsive-tablet {
     padding-top: 2.8rem;
@@ -290,7 +290,7 @@
     right: 155px;
     bottom: 260px;
     background-color: $blue-bg-projects;
-    border: 2px solid $green-stroke;
+    border: 2px solid $red-stroke;
     border-radius: 3px;
     padding: 1rem 1.3rem;
     @include responsive-small-mobile {
