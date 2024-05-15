@@ -1,0 +1,118 @@
+#s-contact {
+  background-color: $dark-bg;
+  .container {
+    @include container();
+  }
+}
+
+.title-contact {
+  position: relative;
+  h1 {
+    color: $white-main;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 500;
+    margin-bottom: 9rem;
+    line-height: 70px;
+    font-size: 6rem;
+    position: relative;
+    z-index: 1;
+    padding: 10rem 4rem 2.5rem 4rem;
+    letter-spacing: 0.4px;
+    max-width: 450px;
+    @include responsive-small-mobile-and-mobile() {
+      padding: 10rem 0 2.5rem 0;
+      margin-bottom: 0;
+    }
+    @include responsive-tablet() {
+      padding: 0;
+    }
+  }
+  img {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+  }
+}
+
+.flex-form {
+  @include align-center();
+  margin-bottom: 15rem;
+  padding: 0 4rem;
+  @include responsive-small-mobile-and-mobile() {
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+  }
+  @include responsive-desktop() {
+    gap: 220px;
+  }
+  @include responsive-desktop-hd {
+    padding: 0;
+  }
+  h2 {
+    color: $white-main;
+    font-size: 1.8rem;
+    line-height: 30px;
+    font-weight: 400;
+    max-width: 500px;
+    margin-top: 15rem;
+    margin-bottom: 2.8rem;
+    @include responsive-small-mobile-and-mobile() {
+      margin-top: 0;
+    }
+  }
+  form input:not(.button-submit) {
+    background-color: $dark-gray;
+    border-radius: 40px;
+    padding: 1.7rem 2rem;
+    margin: 0.6rem 0;
+    caret-color: $white-main;
+    color: $white-main;
+    outline: none;
+    &:focus {
+      border: 1px solid $yellow-main;
+    }
+    &::placeholder {
+      font-size: 1.4rem;
+      color: $dark-placeholder;
+    }
+    @include responsive-small-mobile-and-mobile() {
+      margin: 0.6rem 0 0.6rem 0;
+    }
+  }
+}
+
+.input-message {
+  height: 130px;
+  border-radius: 30px !important;
+  padding-bottom: 10rem !important;
+}
+
+.button-submit {
+  display: block;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  color: $dark-bg;
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: 'Cirka', sans-serif !important;
+  background-color: $yellow-main;
+  border-radius: 40px;
+  padding: 1.2rem 0 1.4rem 0;
+  margin-top: 1.1rem;
+  &:hover {
+    filter: brightness(1.07);
+  }
+  @include responsive-small-mobile-and-mobile() {
+    width: 100%;
+    margin: 0.6rem 0 0.6rem 0;
+  }
+  @include responsive-tablet() {
+    width: 180px;
+  }
+}
+
+.white-skills div p {
+  color: $white-main !important;
+  font-weight: 500 !important;
+}

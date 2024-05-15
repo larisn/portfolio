@@ -1,0 +1,227 @@
+#s-skills {
+  .container {
+    @include container();
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      max-width: 1500px;
+      padding: 8rem 4rem 2.5rem 4rem;
+      @include responsive-desktop-hd() {
+        padding: 8rem 0 2.5rem 0;
+      }
+    }
+  }
+}
+
+.container-animation-skills {
+  @include flexbox-between();
+  width: 100%;
+  gap: 110px;
+}
+
+.container-skills {
+  @include flexbox-between();
+  animation: scroll 25s linear infinite;
+  gap: 110px;
+  div {
+    @include align-center();
+    gap: 7px;
+    p {
+      color: $dark-bg;
+      font-weight: 700;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container-card-skills {
+  margin: 15rem 0;
+  padding: 0 4rem 0 4rem;
+  @include responsive-desktop-hd() {
+    padding: 0;
+  }
+  @include responsive-small-mobile-and-mobile() {
+    margin: 8rem 0;
+  }
+  h2 {
+    color: $dark-bg;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 700;
+    margin-bottom: 9rem;
+    @include responsive-small-mobile-and-mobile() {
+      font-size: 4.5rem;
+      line-height: 50px;
+      margin-bottom: 5rem;
+    }
+    @include responsive-tablet() {
+      font-size: 4.5rem;
+      line-height: 50px;
+      margin-bottom: 8rem;
+    }
+    @include responsive-desktop() {
+      padding-left: 0;
+      font-size: 5rem;
+      line-height: 60px;
+      max-width: 700px;
+    }
+  }
+}
+
+.content-card-skills {
+  @include align-center();
+  align-items: stretch;
+  gap: 23px;
+  flex-wrap: wrap;
+  height: auto;
+  .card-skills {
+    background-color: $white-main;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 355px;
+    a {
+      @include flexbox-center();
+      transition: all .3s ease-in-out;
+      width: 35px;
+      height: 35px;
+      &:hover {
+        background-color: $rose-bg-main;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    div {
+      @include flexbox-between();
+    }
+    .details {
+      justify-content: start !important;
+    }
+    h3 {
+      color: $dark-bg;
+      font-family: 'Cirka', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin: 8rem 0 2.5rem 0;
+    }
+    p {
+      color: $dark-bg;
+      line-height: 24px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+    }
+    span {
+      display: inline-block;
+      background-color: $rose-bg;
+      padding: 0.7rem 1.8rem;
+      border-radius: 30px;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: $dark-bg;
+      margin: 0.6rem;
+    }
+    @include responsive-small-mobile-and-mobile() {
+      flex-grow: 1;
+    }
+    @include responsive-tablet() {
+      flex-grow: 1;
+    }
+    @include responsive-desktop() {
+      flex-grow: 0;
+    }
+  }
+}
+
+.container-projects {
+  padding: 2rem 4rem 4rem 4rem;
+  @include responsive-desktop-hd() {
+    padding: 0 0 2.5rem 0;
+  }
+  h2 {
+    color: $dark-bg;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 700;
+    @include responsive-small-mobile-and-mobile() {
+      font-size: 4.5rem;
+      line-height: 50px;
+      margin-bottom: 5rem;
+    }
+    @include responsive-tablet() {
+      font-size: 4.5rem;
+      line-height: 50px;
+    }
+    @include responsive-desktop() {
+      padding-left: 0;
+      font-size: 5rem;
+      line-height: 60px;
+      max-width: 700px;
+    }
+  }
+  a button {
+    transition: all .3s ease-in-out;
+    color: $dark-bg;
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: 'Cirka', sans-serif !important;
+    background-color: $yellow-main;
+    border-radius: 40px;
+    padding: 1.2rem 0 1.4rem 0;
+    &:hover {
+      background-color: $dark-bg;
+      color: $white-main;
+      font-weight: 500;
+    }
+    @include responsive-small-mobile-and-mobile() {
+      width: 100%;
+    }
+    @include responsive-tablet() {
+      width: 180px;
+      transform: translateY(-45px);
+    }
+  }
+}
+
+.content-projects {
+  @include responsive-small-mobile-and-mobile() {
+    display: block;
+  }
+  @include responsive-tablet() {
+    @include align-center();
+    gap: 70px;
+  }
+  span {
+    display: block;
+    color: rgb(151, 151, 151);
+    font-weight: 400;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  h3 {
+    color: $dark-bg;
+    font-size: 3rem;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 600;
+    margin-bottom: 6rem;
+  }
+  .projects {
+    @include responsive-small-mobile-and-mobile() {
+      margin-top: 0;
+    }
+    @include responsive-tablet() {
+      margin-top: 15rem;
+    }
+  }
+  img {
+    width: 100%;
+    @include responsive-tablet() {
+      height: auto;
+    }
+  }
+}

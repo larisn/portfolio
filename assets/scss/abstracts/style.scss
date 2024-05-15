@@ -1,0 +1,15 @@
+@import "../abstracts/variables",
+"../abstracts/mixins",
+"../abstracts/reset",
+"../pages/menu",
+"../pages/about",
+"../pages/story",
+"../pages/contact",
+"../pages/skills",
+"../pages/home",
+"../pages/footer",
+"../pages/contactSubmit";
+
+body {
+  background-color: $rose-bg-main;
+}

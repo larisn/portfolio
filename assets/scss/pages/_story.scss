@@ -1,0 +1,119 @@
+#s-story {
+  background-color: $white-main;
+  .container {
+    @include container();
+    padding: 10rem 4rem 5rem 4rem;
+    @include responsive-tablet() {
+      padding: 10rem 4rem 8rem 4rem;
+    }
+    @include responsive-desktop() {
+      padding: 12rem 4rem 10rem 4rem;
+    }
+    @include responsive-desktop-hd() {
+      padding: 12rem 0 10rem 0;
+    }
+  }
+}
+
+.container-title-story {
+  position: relative;
+  img {
+    position: absolute;
+    z-index: 0;
+    right: -95px;
+    @include responsive-small-mobile-and-mobile() {
+      display: none;
+    }
+    @include responsive-tablet() {
+      width: 500px;
+      bottom: -115px;
+    }
+    @include responsive-desktop() {
+      bottom: -255px;
+      width: 600px;
+      right: -225px;
+    }
+  }
+  h1 {
+    color: $dark-bg !important;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    @include responsive-small-mobile-and-mobile() {
+      font-size: 4.5rem;
+      line-height: 50px;
+      margin-bottom: 1rem;
+    }
+    @include responsive-tablet() {
+      font-size: 4.5rem;
+      line-height: 50px;
+    }
+    @include responsive-desktop() {
+      padding-left: 0;
+      font-size: 5rem;
+      line-height: 60px;
+      max-width: 800px;
+    }
+  }
+  h2 {
+    color: rgb(178, 178, 178);
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    font-weight: 300;
+    @include responsive-small-mobile-and-mobile() {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.content-card-story {
+  @include align-center();
+  align-items: stretch;
+  gap: 23px;
+  flex-wrap: wrap;
+  margin-top: 11rem;
+  position: relative;
+  z-index: 1;
+  .card-story {
+    background-color: $white-card;
+    padding: 3rem 5rem 3rem 5rem;
+    border-radius: 20px;
+    width: 390px;
+    flex-grow: 1;
+    height: 340px;
+    text-align: center;
+    @include responsive-small-mobile-and-mobile() {
+      height: 100%;
+    }
+    h2 {
+      color: $dark-bg;
+      font-family: 'Cirka', sans-serif;
+      font-weight: 700;
+      font-size: 2.6rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 27px;
+      max-width: 500px;
+      &:last-child {
+        text-align: center;
+        max-width: 1500px;
+      }
+      @include responsive-small-mobile-and-mobile() {
+        font-size: 1.4rem;
+      }
+    }
+    div {
+      @include flexbox-center();
+      background-color: $rose-bg;
+      border-radius: 50%;
+      width: 75px;
+      height: 75px;
+      padding: 2.4rem;
+      margin: 2.5rem auto 2.5rem auto;
+    }
+  }
+}

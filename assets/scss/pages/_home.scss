@@ -1,0 +1,164 @@
+#s-home {
+  background-color: $dark-bg;
+  padding: 24rem 3rem 19.5rem 3rem;
+  position: relative;
+  @include responsive-small-mobile-and-mobile() {
+    padding-top: 5rem;
+    line-height: 27px;
+    padding: 7rem 3rem 5rem 3rem;
+    height: 100%;
+  }
+  @include responsive-tablet() {
+    padding-top: 10rem;
+    height: 892px;
+  }
+  @include responsive-desktop() {
+    padding: 12rem 4rem 22.5rem 4rem;
+    height: 100vh;
+  }
+  @include responsive-desktop-hd() {
+    padding: 16rem 4rem 0 4rem;
+  }
+  .container {
+    @include container();
+    z-index: 1;
+    button {
+      @include flexbox-center();
+      position: relative;
+      z-index: 1;
+      transition: all ease-in-out 0.3s;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.052);
+      color: $dark-bg;
+      font-size: 1.8rem;
+      font-family: 'Cirka', sans-serif;
+      font-weight: 600;
+      padding: 1rem 2.5rem 1.5rem 2.5rem;
+      text-align: center;
+      background-color: $yellow-main;
+      border-radius: 40px;
+      width: 200px;
+      height: 47px;
+      &:hover {
+        filter: brightness(1.07);
+      }
+      @include responsive-small-mobile-and-mobile() {
+        width: 100%;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+.container-star {
+  position: relative;
+  h1 {
+    position: relative;
+    z-index: 1;
+    color: $white-main;
+    font-family: 'Cirka', sans-serif;
+    font-weight: 600;
+    @include responsive-small-mobile-and-mobile() {
+      font-size: 4rem;
+      line-height: 55px;
+      letter-spacing: 1px;
+      margin-top: 9rem;
+    }
+    @include responsive-tablet() {
+      font-size: 6rem;
+      line-height: 78px;
+      letter-spacing: 1px;
+      margin-top: 9rem;
+    }
+    @include responsive-desktop() {
+      line-height: 85px;
+      font-size: 7rem;
+      letter-spacing: 2.5px;
+    }
+  }
+  img {
+    position: absolute;
+    right: 660px;
+    top: 10px;
+    @include responsive-small-mobile-and-mobile() {
+      display: none;
+    }
+    @include responsive-tablet() {
+      right: 10px;
+    }
+    @include responsive-desktop() {
+      right: 350px;
+    }
+    @include responsive-desktop-hd() {
+      right: 575px;
+    }
+  }
+}
+
+.container-buttons {
+  @include align-center();
+  width: 100%;
+  gap: 15px;
+  a:nth-child(2) button {
+    color: $white-main !important;
+    background-color: $dark-gray !important;
+  }
+  @include responsive-small-mobile-and-mobile() {
+    display: block;
+    width: 100%;
+  }
+}
+
+.crown {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 541px;
+  width: 700px;
+  @include responsive-tablet() {
+    top: 449px;
+  }
+  @include responsive-desktop() {
+    top: 356px;
+    right: 0;
+  }
+  @include responsive-desktop-hd() {
+    top: 510px;
+    right: 100px;
+  }
+  @include responsive-small-mobile-and-mobile() {
+    display: none;
+  }
+}
+
+.typing {
+  max-width: 520px;
+  color: $white-main;
+  position: relative;
+  z-index: 1;
+  font-family: $font-main;
+  font-size: 1.8rem;
+  margin: 3rem 0 3.5rem 0;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  line-height: 30px;
+  &::after {
+    content: "|";
+    animation: blinkCursor 1.2s infinite ease-in-out;
+    color: $yellow-main;
+    margin-left: 8px;
+  }
+  @include responsive-small-mobile-and-mobile() {
+    font-size: 1.5rem;
+    line-height: 27px;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
