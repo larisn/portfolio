@@ -1,36 +1,52 @@
 
 <h1 align="center">
-<img src="assets/img/icons/brand-icon-rose.svg" width="50px"><br>Portfólio - Larissa Santos
+<img src="assets/img/icon/favicon.svg" width="50px"><br>Portfólio - larisn
 </h1>
 <br>
 
-![](https://github.com/larisn/portfolio/blob/main/assets/img/Preview.png)
+<h3 align="center">
+👑 Preview - Desktop
+</h3>
+
+![Desktop](https://github.com/larisn/portfolio/blob/main/assets/img/preview-pc.png)
+<br>
+<br>
+
+<h3 align="center">
+👑 Preview - Mobile e Tablet
+</h3>
+<br>
+
+&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; <img src="assets/img/preview-mobile.png" width="200px"> &ensp; &ensp; &ensp; <img src="assets/img/preview-tablet.png" width="293px">
+<br>
 <br>
 
 <div align="center">
-  <p><a href="https://larisn.com/">Clique para ir para o portfólio</a></p>
+  <p><a href="https://larisn.vercel.app/">Clique para ir para o portfólio</a></p>
 </div>
 
 ## ✨ Seções
-O site possui cinco partes:
+O site possui sete partes:
 
 - **Home:** Nessa parte é uma breve apresentação do site.
-- **Quem sou eu:** Essa seção fala um pouco sobre mim.
-- **Meus Projetos:** Apresento meus principais projetos com link direto para eles.
-- **Conhecimentos:** Apresenta as tecnologias que tenho algum conhecimento.
-- **Contato:** Possui um formulário de contato para o usuário preencher.
+- **Serviços:** Apresento alguns dos serviços que ofereço.
+- **Trabalhos:** Apresento alguns dos meus projetos com link direto para eles.
+- **Sobre mim:** Essa seção fala um pouco sobre mim.
+- **Perspectiva:** Essa seção fala sobre alguns valores que levo pra vida.
+- **Contato:** Possui um formulário de contato para entrar em contato diretamente comigo.
+- **Submissão do formulário:** Possui uma página de feedback ao usuário ao enviar o formulário de contato.
 <br>
 
 ---
 
-## 👑 Tecnologias utilizadas:
+## 💻 Tecnologias utilizadas:
 
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 * HTML
 * Sass
 * JavaScript
-* ScrollReveal
+* AOS
 * Figma
 
 ---
@@ -42,4 +58,4 @@ Esse projeto está sob licença. Clique no arquivo [LICENÇA](https://github.com
 
 ---
 
-Feito com 🤍 by larisn
+Feito com 💛 by larisn
