@@ -17,6 +17,7 @@
   @include flexbox-between();
   width: 100%;
   gap: 110px;
+  overflow: hidden;
 }
 
 .container-skills {
