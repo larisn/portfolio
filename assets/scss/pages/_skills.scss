@@ -1,11 +1,11 @@
 #s-skills {
   .container {
-    @include container();
     h1 {
       font-size: 1.5rem;
       font-weight: 500;
       max-width: 1500px;
       padding: 8rem 4rem 2.5rem 4rem;
+      @include container();
       @include responsive-desktop-hd() {
         padding: 8rem 0 2.5rem 0;
       }
@@ -51,7 +51,8 @@
 }
 
 .container-card-skills {
-  margin: 15rem 0;
+  @include container();
+  margin: 15rem auto 0 auto;
   padding: 0 4rem 0 4rem;
   @include responsive-desktop-hd() {
     padding: 0;
@@ -150,8 +151,12 @@
 
 .container-projects {
   padding: 2rem 4rem 4rem 4rem;
-  @include responsive-desktop-hd() {
-    padding: 0 0 2.5rem 0;
+  @include container();
+  @include responsive-tablet() {
+    padding-top: 15rem;
+  }
+  @include responsive-desktop() {
+    padding: 15rem 0 2.5rem 0;
   }
   h2 {
     color: $dark-bg;
