@@ -1,8 +1,5 @@
 #s-contact {
   background-color: $dark-bg;
-  .container {
-    @include container();
-  }
 }
 
 .title-contact {
@@ -36,6 +33,7 @@
 
 .flex-form {
   @include align-center();
+  @include container();
   margin-bottom: 15rem;
   padding: 0 4rem;
   @include responsive-small-mobile-and-mobile() {
