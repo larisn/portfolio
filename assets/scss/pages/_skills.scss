@@ -13,25 +13,17 @@
   }
 }
 
-.container-animation-skills {
-  @include flexbox-between();
-  width: 100%;
-  gap: 110px;
+.animation-skills {
+  @include flexbox-center();
+  flex-direction: column;
   overflow: hidden;
 }
 
-.container-skills {
-  @include flexbox-between();
-  animation: scroll 25s linear infinite;
-  gap: 110px;
-  div {
-    @include align-center();
-    gap: 7px;
-    p {
-      color: $dark-bg;
-      font-weight: 700;
-    }
-  }
+.container-animation-skills {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  gap: 80px;
 }
 
 @keyframes scroll {
@@ -39,7 +31,22 @@
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100%);
+  }
+}
+
+.container-skills {
+  display: flex;
+  gap: 80px;
+  animation: scroll 25s linear infinite;
+  div {
+    @include align-center();
+    white-space: nowrap;
+    gap: 7px;
+    p {
+      color: $dark-bg;
+      font-weight: 700;
+    }
   }
 }
 
