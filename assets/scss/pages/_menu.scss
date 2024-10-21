@@ -104,7 +104,7 @@
   @include container();
   @include responsive-desktop() {
     @include flexbox-between();
-    padding: 4.5rem 4rem 0 4rem;
+    padding: 4.5rem 0 0 0;
     position: absolute;
     z-index: 3;
     left: 0;

@@ -14,7 +14,7 @@
   }
   @include responsive-desktop() {
     padding: 12rem 4rem 22.5rem 4rem;
-    height: 100vh;
+    height: 892px;
   }
   @include responsive-desktop-hd() {
     padding: 16rem 4rem 0 4rem;
@@ -118,11 +118,11 @@
     top: 449px;
   }
   @include responsive-desktop() {
-    top: 356px;
+    top: 300px;
     right: 0;
   }
   @include responsive-desktop-hd() {
-    top: 510px;
+    top: 449px;
     right: 100px;
   }
   @include responsive-small-mobile-and-mobile() {
