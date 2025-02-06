@@ -2,37 +2,36 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfólio | larisn">
+    <meta name="author" content="Larissa Santos" />
+    <meta name="description" data-i18n="main-desc" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFD392">
-    <meta name="copyright" content="Portfólio | larisn">
-    <meta http-equiv="content-language" content="pt-br">
-    <meta property="og:title" content="Portfólio | larisn">
-    <meta property="og:description" content="Portfólio | larisn">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="https://larisn.github.io/assets/img/preview-pc.png">
-
-    <!-- google fonts -->
+    <meta name="theme-color" content="#FFD392" />
+    <meta name="copyright" content="Larisn 2024" />
+    <meta name="keywords" content="sites, web, desenvolvimento, frontend, larisn, larissa santos, ui designer, ux designer, programadora, front-end, designer, ui, lari, freelancer, freela, website, portfólio" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="copyright" data-i18n="main-title" content="" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:image" content="https://github.com/larisn/portfolio/blob/main/assets/img/preview-pc.png" />
+    <meta property="og:title" data-i18n="main-title" content="" />
+    <meta property="og:description" data-i18n="main-title" content="" />
+    <meta property="og:image" content="https://github.com/larisn/portfolio/blob/main/assets/img/preview-pc.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/img/icon/favicon.svg" type="image/x-icon">
-
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Portfólio | larisn</title>
+    <link rel="icon" href="assets/img/icon/brand-mobile.svg" />
+    <link rel="apple-touch-icon" href="assets/img/icon/brand-mobile.svg" />
+    <link rel="shortcut icon" href="assets/img/icon/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title data-i18n="main-title"></title>
   </head>
 
   <body class="body-thanks">
     <main class="main-thanks">
       <div class="container-thanks">
-        <h1 class="scrollReveal200">Obrigada! 😊</h1>
-        <h2 class="scrollReveal300">Sua mensagem foi enviada com sucesso! Te responderei o mais rápido possível. </h2>
+        <h1 data-section="thanks" data-i18n="title" class="scrollReveal200"></h1>
+        <h2 data-section="thanks" data-i18n="desc" class="scrollReveal300"></h2>
         <a href="/index.html" class="button-thanks scrollReveal400">
-          <button>
-            Voltar
-          </button>
+          <button data-section="thanks" data-i18n="button"></button>
         </a>
       </div>
     </main>
@@ -41,7 +40,7 @@
       <div class="container">
         <div class="container-brand">
           <img src="assets/img/icon/brand-footer.svg" alt="">
-          <p>Desenvolvo websites, crio identidades visuais e design UX/UI.</p>
+          <p data-section="footer" data-i18n="title"></p>
           <div class="flex-socials">
             <a href="https://www.instagram.com/larisn.code" target="_blank">
               <img src="assets/img/icon/instagram-white.svg" alt="">
@@ -58,20 +57,28 @@
         </div>
 
         <div class="container-mail">
-          <p>Sinta-se à vontade para entrar em contato se quiser criar um projeto ou simplesmente bater um papo.</p>
+          <p data-section="footer" data-i18n="desc-mail"></p>
 
-          <div>
-            <img src="assets/img/icon/send.svg" alt="">
-            <span>@larisn.code</span>
-          </div>
+          <a href="https://www.instagram.com/larisn.code" target="_blank">
+            <div>
+              <img src="assets/img/icon/send.svg" alt="">
+              <span>
+                @larisn.code
+              </span>
+            </div>
+          </a>
 
-          <div>
-            <img src="assets/img/icon/mail.svg" alt="">
-            <span>contatolarisn@gmail.com</span>
-          </div>
+          <a href="mailto:larisn@outlook.com.br" target="_blank">
+            <div>
+              <img src="assets/img/icon/mail.svg" alt="">
+              <span>larisn@outlook.com.br</span>
+            </div>
+          </a>
         </div>
       </div>
     </footer>
+
     <script src="assets/js/scrollReveal.js"></script>
+    <script src="assets/js/lang.js"></script>
   </body>
 </html>

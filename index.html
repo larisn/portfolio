@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Larissa Santos" />
-    <meta name="description" content="Construo interfaces modernas e fluidas para atender as necessidades de pessoas e empresas." />
+    <meta name="description" data-i18n="main-desc" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FFD392" />
     <meta name="copyright" content="Larisn 2024" />
     <meta name="keywords" content="sites, web, desenvolvimento, frontend, larisn, larissa santos, ui designer, ux designer, programadora, front-end, designer, ui, lari, freelancer, freela, website, portfólio" />
     <meta http-equiv="content-language" content="pt-br" />
-    <meta name="copyright" content="Larisn | Desenvolvimento & UX/UI Design" />
+    <meta name="copyright" data-i18n="main-title" content="" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:image" content="https://github.com/larisn/portfolio/blob/main/assets/img/preview-pc.png" />
-    <meta property="og:title" content="Larisn | Desenvolvimento & UX/UI Design" />
-    <meta property="og:description" content="Larisn | Desenvolvimento & UX/UI Design" />
+    <meta property="og:title" data-i18n="main-title" content="" />
+    <meta property="og:description" data-i18n="main-title" content="" />
     <meta property="og:image" content="https://github.com/larisn/portfolio/blob/main/assets/img/preview-pc.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="assets/img/icon/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Larisn | Desenvolvimento & UX/UI Design</title>
+    <title data-i18n="main-title"></title>
   </head>
 
   <body>
@@ -32,19 +32,35 @@
           <img class="brand" src="assets/img/icon/favicon.svg" alt="">
         </a>
 
-        <ul class="links">
-          <li>
-            <a href="#s-skills" rel="noopener">Serviços</a>
-          </li>
+        <div class="navbar-flex">
+          <ul class="links">
+            <li>
+              <a href="#s-skills" rel="noopener" data-section="navbar" data-i18n="services"></a>
+            </li>
 
-          <li>
-            <a href="#s-about" rel="noopener">Sobre mim</a>
-          </li>
+            <li>
+              <a href="#s-about" rel="noopener" data-section="navbar" data-i18n="about"></a>
+            </li>
 
-          <li>
-            <a href="#s-contact" rel="noopener">Contato</a>
-          </li>
-        </ul>
+            <li>
+              <a href="#s-contact" rel="noopener" data-section="navbar" data-i18n="contact"></a>
+            </li>
+          </ul>
+
+          <div class="langs">
+            <button onclick="changeLanguage('pt')">
+              <img src="assets/img/icon/pt.svg" alt="">
+            </button>
+            
+            <button onclick="changeLanguage('en')">
+              <img src="assets/img/icon/en.svg" alt="">
+            </button>
+
+            <button onclick="changeLanguage('es')">
+              <img src="assets/img/icon/es.svg" alt="">
+            </button>
+          </div>
+        </div>
       </nav>
 
       <nav class="mobile-navbar">
@@ -60,19 +76,33 @@
           </a>
         </div>
 
-        <ul id="nav-mobile-options" class="links">
-          <li>
-            <a href="#s-skills" rel="noopener">Serviços</a>
-          </li>
+        <div class="navbar-flex" id="nav-mobile-options">
+          <ul class="links">
+            <li>
+              <a href="#s-skills" rel="noopener" data-section="navbar" data-i18n="services"></a>
+            </li>
+            <li>
+              <a href="#s-about" rel="noopener" data-section="navbar" data-i18n="about"></a>
+            </li>
+            <li>
+              <a href="#s-contact" rel="noopener" data-section="navbar" data-i18n="contact"></a>
+            </li>
+          </ul>
 
-          <li>
-            <a href="#s-about" rel="noopener">Sobre mim</a>
-          </li>
+          <div class="langs">
+            <button onclick="changeLanguage('pt')">
+              <img src="assets/img/icon/pt.svg" alt="">
+            </button>
+            
+            <button onclick="changeLanguage('en')">
+              <img src="assets/img/icon/en.svg" alt="">
+            </button>
 
-          <li>
-            <a href="#s-contact" rel="noopener">Contato</a>
-          </li>
-        </ul>
+            <button onclick="changeLanguage('es')">
+              <img src="assets/img/icon/es.svg" alt="">
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -89,15 +119,15 @@
             data-aos-once="false"
           >
             <div class="container-star">
-              <h1>Designs modernos & <br> websites funcionais que elevam <br> o nível da sua marca</h1>
+              <h1 id="title-home" data-section="home" data-i18n="title"></h1>
               <img src="assets/img/icon/star.svg" alt="">
             </div>
 
-            <p class="typing">Construo soluções intuitivas para atender as necessidades de pessoas e empresas. </p>
+            <p data-section="home" data-i18n="desc" id="typing-desc" class="typing"></p>
 
             <div class="container-buttons">
               <a href="#s-skills">
-                <button>
+                <button data-section="home" data-i18n="button-know-more">
                   Conhecer mais!
                 </button>
               </a>
@@ -127,7 +157,7 @@
 
       <section id="s-skills">
         <div class="container">
-          <h1>Tecnologias que possuo conhecimento:</h1>
+          <h1 data-section="skills" data-i18n="techs"></h1>
 
           <div class="animation-skills">
             <div class="container-animation-skills">
@@ -220,7 +250,7 @@
           </div>
 
           <div class="container-card-skills">
-            <h2>Aqui está o que tenho a oferecer para fazer sua ideia tomar forma</h2>
+            <h2 data-section="skills" data-i18n="title"></h2>
 
             <div class="content-card-skills">
               <div 
@@ -240,9 +270,9 @@
                   </a>
                 </div>
 
-                <h3>Desenvolvimento</h3>
+                <h3 data-section="skills" data-i18n="title-card1"></h3>
 
-                <p>Uma base de código organizada e um gerenciamento flexível de conteúdo tornam a implementação do projeto fiel à visão inicial.</p>
+                <p data-section="skills" data-i18n="p-card1"></p>
 
                 <div class="details">
                   <span>SEO</span>
@@ -270,16 +300,16 @@
                   </a>
                 </div>
 
-                <h3>Identidade Visual</h3>
+                <h3 data-section="skills" data-i18n="title-card2"></h3>
 
-                <p>Com uma abordagem centrada no cliente, desenvolvo uma identidade visual moderna e que também cria conexões emocionais com seu público-alvo.</p>
+                <p data-section="skills" data-i18n="p-card2"></p>
 
                 <div class="details">
-                  <span>Padrões</span>
-                  <span>Tipografia</span>
+                  <span data-section="skills" data-i18n="details1-card2"></span>
+                  <span data-section="skills" data-i18n="details2-card2"></span>
                 </div>
 
-                <span>Paleta de cores</span>
+                <span data-section="skills" data-i18n="details3-card2"></span>
               </div>
 
               <div 
@@ -300,22 +330,22 @@
                   </a>
                 </div>
 
-                <h3>UX/UI Design</h3>
+                <h3 data-section="skills" data-i18n="title-card3"></h3>
 
-                <p>Elementos que visam aprimorar a estética e experiência do usuário nas interfaces digitais, criando ambientes envolventes e funcionais.</p>
+                <p data-section="skills" data-i18n="p-card3"></p>
 
                 <div class="details">
-                  <span>Ícones</span>
-                  <span>Design</span>
+                  <span data-section="skills" data-i18n="details1-card3"></span>
+                  <span data-section="skills" data-i18n="details2-card3"></span>
                 </div>
 
-                <span>Prototipagem</span>
+                <span data-section="skills" data-i18n="details3-card3"></span>
               </div>
             </div>
           </div>
 
           <div class="container-projects">
-            <h2>Últimos trabalhos</h2>
+            <h2 data-section="skills" data-i18n="title-sec2"></h2>
 
             <div class="content-projects">
               <div>
@@ -333,7 +363,7 @@
                   </a>
     
                   <div>
-                    <span>UX/UI, Identidade Visual, Desenvolvimento</span>
+                    <span data-section="skills" data-i18n="desc-proj1"></span>
                     <h3>Pet Pup’s</h3>
                   </div>
                 </div>
@@ -352,7 +382,7 @@
                   </a>
                   
                   <div>
-                    <span>UX/UI, Identidade Visual, Desenvolvimento</span>
+                    <span data-section="skills" data-i18n="desc-proj1"></span>
                     <h3>Dental Health</h3>
                   </div>
                 </div>
@@ -374,7 +404,7 @@
                   </a>
                   
                   <div>
-                    <span>UX/UI, Identidade Visual, Desenvolvimento</span>
+                    <span data-section="skills" data-i18n="desc-proj1"></span>
                     <h3>Fit Core</h3>
                   </div>
                 </div>
@@ -393,7 +423,7 @@
                   </a>
                   
                   <div>
-                    <span>Desenvolvimento</span>
+                    <span data-section="skills" data-i18n="title-card1"></span>
                     <h3>wind.y</h3>
                   </div>
                 </div>
@@ -401,7 +431,7 @@
             </div>
 
             <a href="https://github.com/larisn" target="_blank">
-              <button>Veja mais projetos</button>
+              <button data-section="skills" data-i18n="btn-skills"></button>
             </a>
           </div>
         </div>
@@ -420,17 +450,17 @@
         >
           <div class="container-title">
             <div>
-              <h1>Sobre mim</h1>
-              <h2>Desenvolvedora Front-end & UX/UI Designer</h2>
+              <h1 data-section="navbar" data-i18n="about"></h1>
+              <h2 data-section="about" data-i18n="title"></h2>
             </div>
             
             <a href="#s-contact">
-              <button>Contate-me</button>
+              <button data-section="about" data-i18n="button-contact"></button>
             </a>
           </div>
 
           <div class="container-description">
-            <p>Me chamo Larissa Santos, tenho 21 anos, sou desenvolvedora Front-end, UX/UI Designer e estudante de Engenharia de Software. Desenvolvo websites com interfaces sofisticadas e harmônicas, combinando design, animação e funcionalidade para oferecer uma ótima experiência ao usuário.</p>
+            <p data-section="about" data-i18n="desc"></p>
           </div>
 
           <div class="buttons-about">
@@ -458,7 +488,7 @@
       <section id="s-story">
         <div class="container">
           <div class="container-title-story">
-            <h1>O que me diferencia é o processo de trabalho tranquilo e a capacidade de tornar uma ideia realidade.</h1>
+            <h1 data-section="story" data-i18n="title"></h1>
 
             <img src="assets/img/pattern2.svg" alt="" data-aos="fade-left"
             data-aos-offset="800"
@@ -480,13 +510,13 @@
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h2>Minha história</h2>
+              <h2 data-section="story" data-i18n="title-card1"></h2>
 
               <div>
                 <img src="assets/img/icon/sound.svg" alt="">
               </div>
 
-              <p>Foi uma jornada na qual eu tinha muitas dúvidas, mas agora estou aqui, cheia de certezas e pronta para levar seu projeto para o próximo nível.</p>
+              <p data-section="story" data-i18n="p-card1"></p>
             </div>
 
             <div 
@@ -499,13 +529,13 @@
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h2>Minha missão</h2>
+              <h2 data-section="story" data-i18n="title-card2"></h2>
 
               <div>
                 <img src="assets/img/icon/light.svg" alt="">
               </div>
 
-              <p>Ampliar o valor do seu produto para seus clientes, aumentando a produtividade por meio de estratégias de design e desenvolvimento.</p>
+              <p data-section="story" data-i18n="p-card2"></p>
             </div>
 
             <div 
@@ -518,13 +548,13 @@
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h2>Minha visão</h2>
+              <h2 data-section="story" data-i18n="title-card3"></h2>
 
               <div>
                 <img src="assets/img/icon/story.svg" alt="">
               </div>
 
-              <p>Minha visão é criar ferramentas e experiências que, além de serem funcionais e encantadoras, reflitam a essência da sua ideia.</p>
+              <p data-section="story" data-i18n="p-card3"></p>
             </div>
 
             <div 
@@ -536,14 +566,15 @@
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
+              id="story4"
             >
-              <h2>Meu comprometimento</h2>
+              <h2 data-section="story" data-i18n="title-card4"></h2>
 
               <div>
                 <img src="assets/img/icon/handshake.svg" alt="">
               </div>
 
-              <p>Estou comprometida a conduzir seu projeto com paixão e empenho, aplicando táticas de design <br> e desenvolvimento que visam otimizar seu valor para seus clientes.</p>
+              <p data-section="story" data-i18n="p-card4"></p>
             </div>
           </div>
         </div>
@@ -562,31 +593,31 @@
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <h1>Vamos criar coisas incríveis juntos!</h1>
+              <h1 data-section="contact" data-i18n="title" id="title-contact"></h1>
               <img src="assets/img/pattern-contact.svg" alt="">
             </div>
   
             <div>
-              <h2>Pronto para começar? Sinta-se à vontade para entrar em contato comigo: preencha o formulário e logo te responderei :)</h2>
+              <h2 data-section="contact" data-i18n="desc"></h2>
   
-              <form action="https://formsubmit.co/contatolarisn@gmail.com" method="POST" id="contact" autocomplete="off">
+              <form action="https://formsubmit.co/larisn@outlook.com.br" method="POST" id="contact" autocomplete="off">
                 <ul>
                   <li>
-                    <input class="input-name" type="text" name="name" placeholder="Seu nome" required>
+                    <input class="input-name" type="text" name="name" data-placeholder="Seu nome" required>
                   </li>
-    
+              
                   <li>
-                    <input class="input-email" type="email" name="email" placeholder="Seu e-mail" required>
+                    <input class="input-email" type="email" name="email" data-placeholder="Seu e-mail" required>
                   </li>
-    
+              
                   <li>
-                    <input class="input-message" type="text" name="message" placeholder="Digite sua mensagem" required>
+                    <input class="input-message" type="text" name="message" data-placeholder="Digite sua mensagem" required>
                   </li>
-    
+              
                   <li>
                     <input class="button-submit" name="submit" type="submit" value="Enviar mensagem">
                   </li>
-    
+              
                   <li>
                     <input type="hidden" name="_next" value="https://larisn.vercel.app/contactSubmit.html">
                     <input type="hidden" name="_captcha" value="false">
@@ -709,7 +740,7 @@
       <div class="container">
         <div class="container-brand">
           <img src="assets/img/icon/brand-footer.svg" alt="">
-          <p>Desenvolvo websites, crio identidades visuais e design UX/UI.</p>
+          <p data-section="footer" data-i18n="title"></p>
           <div class="flex-socials">
             <a href="https://www.instagram.com/larisn.code" target="_blank">
               <img src="assets/img/icon/instagram-white.svg" alt="">
@@ -726,7 +757,7 @@
         </div>
 
         <div class="container-mail">
-          <p>Sinta-se à vontade para entrar em contato se quiser criar um projeto ou simplesmente bater um papo.</p>
+          <p data-section="footer" data-i18n="desc-mail"></p>
 
           <a href="https://www.instagram.com/larisn.code" target="_blank">
             <div>
@@ -750,8 +781,7 @@
 
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/typing.js"></script>
+  <script src="assets/js/lang.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </html>

@@ -57,17 +57,18 @@
     color: $white-main;
     font-family: 'Cirka', sans-serif;
     font-weight: 600;
+    max-width: 890px;
     @include responsive-small-mobile-and-mobile() {
       font-size: 4rem;
       line-height: 55px;
       letter-spacing: 1px;
-      margin-top: 9rem;
+      margin-top: 7rem;
     }
     @include responsive-tablet() {
       font-size: 6rem;
       line-height: 78px;
       letter-spacing: 1px;
-      margin-top: 9rem;
+      margin-top: 8rem;
     }
     @include responsive-desktop() {
       line-height: 85px;
@@ -137,7 +138,7 @@
   z-index: 1;
   font-family: $font-main;
   font-size: 1.8rem;
-  margin: 3rem 0 3.5rem 0;
+  margin: 4rem 0 3.5rem 0;
   letter-spacing: 0.3px;
   font-weight: 300;
   line-height: 30px;

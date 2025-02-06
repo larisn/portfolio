@@ -1,0 +1,67 @@
+{
+  "main-title": "Larisn | Desenvolvimento & UX/UI Design",
+  "main-desc": "Construo interfaces modernas e fluidas para atender as necessidades de pessoas e empresas.",
+  "navbar": {
+    "services": "Serviços",
+    "about": "Sobre mim",
+    "contact": "Contato"
+  },
+  "home": {
+    "title": "Designs modernos & websites funcionais que elevam o nível da sua marca",
+    "desc": "Construo soluções intuitivas para atender as necessidades de pessoas e empresas.",
+    "button-know-more": "Conheça mais!"
+  },
+  "skills": {
+    "techs": "Tecnologias que possuo conhecimento:",
+    "title": "Aqui está o que tenho a oferecer para fazer sua ideia tomar forma",
+    "title-card1": "Desenvolvimento",
+    "p-card1": "Uma base de código organizada e um gerenciamento flexível de conteúdo tornam a implementação do projeto fiel à visão inicial.",
+    "title-card2": "Identidade Visual",
+    "p-card2": "Com uma abordagem centrada no cliente, desenvolvo uma identidade visual moderna e que também cria conexões emocionais com seu público-alvo.",
+    "details1-card2": "Padrões",
+    "details2-card2": "Tipografia",
+    "details3-card2": "Paleta de cores",
+    "title-card3": "UX/UI Design",
+    "p-card3": "Elementos que visam aprimorar a estética e experiência do usuário nas interfaces digitais, criando ambientes envolventes e funcionais.",
+    "details1-card3": "Ícones",
+    "details2-card3": "Design",
+    "details3-card3": "Prototipagem",
+    "title-sec2": "Últimos trabalhos",
+    "desc-proj1": "UX/UI, Identidade Visual, Desenvolvimento",
+    "desc-proj3": "UX/UI, Identidade Visual, Desenvolvimento",
+    "btn-skills": "Veja mais projetos"
+  },
+  "about": {
+    "title": "Desenvolvedora Front-end & UX/UI Designer",
+    "desc": "Me chamo Larissa Santos, tenho 21 anos, sou desenvolvedora Frontend, UX/UI Designer e estudante de Engenharia de Software. Desenvolvo websites com interfaces sofisticadas e harmônicas, combinando design, animação e funcionalidade para oferecer uma ótima experiência ao usuário.",
+    "button-contact": "Contate-me"
+  },
+  "story": {
+    "title": "O que me diferencia é o processo de trabalho tranquilo e a capacidade de tornar uma ideia realidade.",
+    "title-card1": "Minha história",
+    "p-card1": "Minha jornada foi marcada por dúvidas e desafios, mas cada passo me trouxe ainda mais aprendizado. Hoje, estou preparada para elevar seu projeto ao próximo nível.",
+    "title-card2": "Minha missão",
+    "p-card2": "Ampliar o valor do seu produto para seus clientes, aumentando a produtividade por meio de estratégias de design e desenvolvimento.",
+    "title-card3": "Minha visão",
+    "p-card3": "Minha visão é criar ferramentas e experiências que, além de serem funcionais e encantadoras, reflitam a essência da sua ideia.",
+    "title-card4": "Meu comprometimento",
+    "p-card4": "Estou comprometida a conduzir seu projeto com paixão e empenho, aplicando táticas de design e desenvolvimento que visam otimizar seu valor para seus clientes."
+  },
+  "contact": {
+    "title": "Vamos criar coisas incríveis juntos!",
+    "desc": "Pronto para começar? Sinta-se à vontade para entrar em contato comigo: preencha o formulário e logo te responderei :)",
+    "name": "Seu nome",
+    "email": "Seu email",
+    "message": "Digite sua mensagem",
+    "submit": "Enviar mensagem"
+  },
+  "footer": {
+    "title": "Desenvolvo websites, crio identidades visuais e design UX/UI.",
+    "desc-mail": "Sinta-se à vontade para entrar em contato se quiser criar um projeto ou simplesmente bater um papo."
+  },
+  "thanks": {
+    "title": "Obrigada! 😊",
+    "desc": "Sua mensagem foi enviada com sucesso! Te responderei o mais rápido possível.",
+    "button": "Voltar"
+  }
+}

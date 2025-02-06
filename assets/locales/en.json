@@ -1,0 +1,67 @@
+{
+  "main-title": "Larisn | Development & UX/UI Design",
+  "main-desc": "I build modern and fluid interfaces to meet the needs of people and companies.",
+  "navbar": {
+    "services": "Services",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Modern designs & functional websites that elevate your brand",
+    "desc": "I build intuitive solutions to meet the needs of individuals and businesses.",
+    "button-know-more": "Learn more!"
+  },
+  "skills": {
+    "techs": "Technologies that I know:",
+    "title": "Here’s what I have to offer to bring your idea to life",
+    "title-card1": "Development",
+    "p-card1": "An organized code base and flexible content management make the project implementation faithful to the initial vision.",
+    "title-card2": "Visual Identity",
+    "p-card2": "With a client-centered approach, I develop modern visual identities that also create emotional connections with your target audience.",
+    "details1-card2": "Standards",
+    "details2-card2": "Typography",
+    "details3-card2": "Color palette",
+    "title-card3": "UX/UI Design",
+    "p-card3": "Elements aimed at enhancing the aesthetics and user experience of digital interfaces, creating engaging and functional environments.",
+    "details1-card3": "Icons",
+    "details2-card3": "Design",
+    "details3-card3": "Prototyping",
+    "title-sec2": "Latest work",
+    "desc-proj1": "UX/UI, Visual Identity, Development",
+    "desc-proj3": "UX/UI, Visual Identity, Development",
+    "btn-skills": "See more projects"
+  },
+  "about": {
+    "title": "Frontend Developer & UX/UI Designer",
+    "desc": "My name is Larissa Santos, I’m 21 years old, a Frontend Developer, UX/UI Designer, and a Software Engineering student. I create websites with sophisticated and harmonious interfaces, combining design, animation, and functionality to provide a great user experience.",
+    "button-contact": "Contact me"
+  },
+  "story": {
+    "title": "What sets me apart is the calm work process and the ability to turn an idea into reality.",
+    "title-card1": "My story",
+    "p-card1": "My journey has been marked by doubts and challenges, but each step has brought me more learning. Today, I’m ready to take your project to the next level.",
+    "title-card2": "My mission",
+    "p-card2": "To enhance the value of your product for your customers, increasing productivity through design and development strategies.",
+    "title-card3": "My vision",
+    "p-card3": "My vision is to create tools and experiences that, in addition to being functional and charming, reflect the essence of your idea.",
+    "title-card4": "My commitment",
+    "p-card4": "I am committed to driving your project with passion and dedication, applying design and development strategies that aim to optimize its value for your clients."
+  },
+  "contact": {
+    "title": "Let’s create amazing things together!",
+    "desc": "Ready to get started? Feel free to reach out to me: fill out the form and I’ll get back to you soon :)",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Enter your message",
+    "submit": "Send message"
+  },
+  "footer": {
+    "title": "I develop websites, create visual identities, and design UX/UI.",
+    "desc-mail": "Feel free to contact me if you want to create a project or just have a chat."
+  },
+  "thanks": {
+    "title": "Thank you! 😊",
+    "desc": "Your message has been successfully sent! I will reply as soon as possible.",
+    "button": "Go back"
+  }
+}

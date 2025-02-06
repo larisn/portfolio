@@ -6,6 +6,9 @@
   right: 0;
   background-color: $dark-bg;
   padding: 3rem;
+  .langs {
+    display: none;
+  }  
   div:nth-child(1) {
     @include flexbox-between();
     flex-direction: row-reverse;
@@ -63,11 +66,28 @@
       }
     }
   }
+  .langs {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 1.6rem;
+    button {
+      width: auto;
+    }
+    img {
+      width: 28px;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
 
 .navbar {
   display: none;
 }
+
 
 .links a {
   font-family: $font-main;
@@ -115,9 +135,44 @@
       @include flexbox-center();
       gap: 30px;  
     }
+    .navbar-flex {
+      @include flexbox-between();
+    }
+    .langs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 4rem;
+      border-left: 1px solid rgb(156 156 156 / 15%);
+      padding-left: 3rem;
+      margin-left: 3rem;
+      img {
+        width: 25px;
+        transition: all .3s ease-in-out;
+        &:hover {
+          transform: scaleX(-10%);
+        }
+      }
+    }
   }
   @include responsive-desktop-hd() {
     padding: 4.5rem 0 0 0;
+    .langs {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      height: 4rem;
+      border-left: 1px solid rgb(156 156 156 / 15%);
+      padding-left: 3rem;
+      margin-left: 3rem;
+      img {
+        width: 25px;
+        transition: all .3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
   }
 }
 
