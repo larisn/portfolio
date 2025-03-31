@@ -12,7 +12,7 @@
     height: 100vh;
   }
   @include responsive-desktop() {
-    padding: 18rem 4rem;
+    padding: 18rem 0;
     height: auto;
   }
   @include responsive-desktop-hd() {
@@ -45,6 +45,12 @@
         width: 100%;
         margin-bottom: 1.2rem;
       }
+    }
+    @include responsive-desktop() {
+      padding: 0 4rem;
+    }
+    @include responsive-desktop-hd() {
+      padding: 0;
     }
   }
 }
