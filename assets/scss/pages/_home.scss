@@ -12,7 +12,7 @@
     height: 100vh;
   }
   @include responsive-desktop() {
-    padding: 18rem 10rem;
+    padding: 18rem 4rem;
     height: auto;
   }
   @include responsive-desktop-hd() {
@@ -79,7 +79,7 @@
     @include responsive-desktop-hd() {
       line-height: 85px;
       font-size: 7rem;
-      margin-top: 10rem;
+      margin-top: 8rem;
       letter-spacing: 2.5px;
     }
   }
@@ -94,7 +94,7 @@
       right: 10px;
     }
     @include responsive-desktop() {
-      right: 320px;
+      right: 300px;
     }
     @include responsive-desktop-hd() {
       right: 575px;
@@ -133,7 +133,7 @@
     right: 0;
   }
   @include responsive-desktop-hd() {
-    top: 569px;
+    top: 468px;
     right: 100px;
     width: 700px;
   }
