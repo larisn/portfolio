@@ -1,6 +1,5 @@
 #s-home {
   background-color: $dark-bg;
-  padding: 24rem 3rem 19.5rem 3rem;
   position: relative;
   @include responsive-small-mobile-and-mobile() {
     padding-top: 5rem;
@@ -9,15 +8,16 @@
     height: 100%;
   }
   @include responsive-tablet() {
-    padding-top: 10rem;
-    height: 892px;
+    padding: 18rem 4rem;
+    height: 100vh;
   }
   @include responsive-desktop() {
-    padding: 12rem 4rem 22.5rem 4rem;
-    height: 950px;
+    padding: 18rem 10rem;
+    height: auto;
   }
   @include responsive-desktop-hd() {
-    padding: 16rem 4rem 0 4rem;
+    padding: 18rem 4rem;
+    height: 100vh;
   }
   .container {
     @include container();
@@ -68,11 +68,18 @@
       font-size: 6rem;
       line-height: 78px;
       letter-spacing: 1px;
-      margin-top: 8rem;
+      margin-top: 2rem;
     }
     @include responsive-desktop() {
+      line-height: 80px;
+      font-size: 6rem;
+      margin-top: 2rem;
+      letter-spacing: 2.5px;
+    }
+    @include responsive-desktop-hd() {
       line-height: 85px;
       font-size: 7rem;
+      margin-top: 10rem;
       letter-spacing: 2.5px;
     }
   }
@@ -87,7 +94,7 @@
       right: 10px;
     }
     @include responsive-desktop() {
-      right: 350px;
+      right: 320px;
     }
     @include responsive-desktop-hd() {
       right: 575px;
@@ -113,21 +120,22 @@
   position: absolute;
   z-index: 0;
   right: 0;
-  top: 541px;
-  width: 700px;
+  @include responsive-small-mobile-and-mobile() {
+    display: none;
+  }
   @include responsive-tablet() {
-    top: 449px;
+    display: none;
   }
   @include responsive-desktop() {
-    top: 300px;
+    display: block;
+    top: 422px;
+    width: 600px;
     right: 0;
   }
   @include responsive-desktop-hd() {
-    top: 507px;
+    top: 569px;
     right: 100px;
-  }
-  @include responsive-small-mobile-and-mobile() {
-    display: none;
+    width: 700px;
   }
 }
 

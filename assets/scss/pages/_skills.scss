@@ -156,6 +156,9 @@
     padding-top: 15rem;
   }
   @include responsive-desktop() {
+    padding: 15rem 4rem 2.5rem 4rem;
+  }
+  @include responsive-desktop() {
     padding: 15rem 0 2.5rem 0;
   }
   h2 {

@@ -8,13 +8,13 @@
 }
 
 @mixin responsive-small-mobile-and-mobile {
-  @media screen and (min-width: 0px) and (max-width: 767px){
+  @media screen and (min-width: 321px) and (max-width: 767px){
     @content;
   }
 }
 
 @mixin responsive-tablet {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     @content;
   }
 }
